@@ -104,48 +104,48 @@ title = 监控统计
 
 menu = 电信网络监控
 title = 电信网络监控列表
-host = /mainland/CT/CT-BJ /mainland/CT/CT-TJ /mainland/CT/CT-HLJ /mainland/CT/CT-SH /mainland/CT/CT-SC /mainland/CT/CT-GZ
+host = /mainland/CT/CT-BJ~SLAVE_CODE /mainland/CT/CT-TJ~SLAVE_CODE /mainland/CT/CT-HLJ~SLAVE_CODE /mainland/CT/CT-SH~SLAVE_CODE /mainland/CT/CT-SC~SLAVE_CODE /mainland/CT/CT-GZ~SLAVE_CODE
 
 +++ CT-BJ
 
 menu = 北京电信
 title = 北京电信
-alerts = someloss
+slaves = SLAVE_CODE
 host = 202.96.199.133
 
 +++ CT-TJ
 
 menu = 天津电信
 title = 天津电信
-alerts = someloss
+slaves = SLAVE_CODE
 host = 219.150.32.132
 
 +++ CT-HLJ
 
 menu = 黑龙江电信
 title = 黑龙江电信
-alerts = someloss
+slaves = SLAVE_CODE
 host = 219.147.198.242
 
 +++ CT-SH
 
 menu = 上海电信
 title = 上海电信
-alerts = someloss
+slaves = SLAVE_CODE
 host = 116.228.111.118
 
 +++ CT-SC
 
 menu = 四川电信
 title = 四川电信
-alerts = someloss
+slaves = SLAVE_CODE
 host = 61.139.2.69
 
 +++ CT-GZ
 
 menu = 广东电信
 title = 广东电信
-alerts = someloss
+slaves = SLAVE_CODE
 host = 113.111.211.22
  
 
@@ -153,34 +153,34 @@ host = 113.111.211.22
 
 menu = 联通网络监控
 title = 联通网络监控列表
-host = /mainland/CU/CU-BJ /mainland/CU/CU-TJ /mainland/CU/CU-HLJ /mainland/CU/CU-SH /mainland/CU/CU-SC /mainland/CU/CU-GZ
+host = /mainland/CU/CU-BJ~SLAVE_CODE /mainland/CU/CU-TJ~SLAVE_CODE /mainland/CU/CU-HLJ~SLAVE_CODE /mainland/CU/CU-SH~SLAVE_CODE /mainland/CU/CU-SC~SLAVE_CODE /mainland/CU/CU-GZ~SLAVE_CODE
 
 +++ CU-BJ
 
 menu = 北京联通
 title = 北京联通
-alerts = someloss
+slaves = SLAVE_CODE
 host = 61.135.169.121
 
 +++ CU-TJ
 
 menu = 天津联通
 title = 天津联通
-alerts = someloss
+slaves = SLAVE_CODE
 host = 202.99.96.68
 
 +++ CU-HLJ
 
 menu = 黑龙江联通
 title = 黑龙江联通
-alerts = someloss
+slaves = SLAVE_CODE
 host = 202.97.224.69
 
 +++ CU-SH
 
 menu = 上海联通
 title = 上海联通
-alerts = someloss
+slaves = SLAVE_CODE
 host = 210.22.84.3
 
 
@@ -188,14 +188,14 @@ host = 210.22.84.3
 
 menu = 四川联通
 title = 四川联通
-alerts = someloss
+slaves = SLAVE_CODE
 host = 119.6.6.6
 
 +++ CU-GZ
 
 menu = 广东联通
 title = 广东联通
-alerts = someloss
+slaves = SLAVE_CODE
 host = 221.5.88.88
 
  
@@ -204,82 +204,82 @@ host = 221.5.88.88
 
 menu = 移动网络监控
 title = 移动网络监控列表
-host = /mainland/CMCC/CMCC-BJ /mainland/CMCC/CMCC-TJ /mainland/CMCC/CMCC-HLJ /mainland/CMCC/CMCC-SH /mainland/CMCC/CMCC-SC /mainland/CMCC/CMCC-GZ
+host = /mainland/CMCC/CMCC-BJ~SLAVE_CODE /mainland/CMCC/CMCC-TJ~SLAVE_CODE /mainland/CMCC/CMCC-HLJ~SLAVE_CODE /mainland/CMCC/CMCC-SH~SLAVE_CODE /mainland/CMCC/CMCC-SC~SLAVE_CODE /mainland/CMCC/CMCC-GZ~SLAVE_CODE
 
 +++ CMCC-BJ
 
 menu = 北京移动
 title = 北京移动
-alerts = someloss
+slaves = SLAVE_CODE
 host = 221.130.33.52
 
 +++ CMCC-TJ
 
 menu = 天津移动
 title = 天津移动
-alerts = someloss
+slaves = SLAVE_CODE
 host = 211.137.160.5 
 
 +++ CMCC-HLJ
 
 menu = 黑龙江移动
 title = 黑龙江移动
-alerts = someloss
+slaves = SLAVE_CODE
 host = 211.137.241.35
  
 +++ CMCC-SH
 
 menu = 上海移动
 title = 上海移动
-alerts = someloss
+slaves = SLAVE_CODE
 host = 117.131.19.23
 
 +++ CMCC-SC
 
 menu = 四川移动
 title = 四川移动
-alerts = someloss
+slaves = SLAVE_CODE
 host = 218.201.4.3
 
 +++ CMCC-GZ
 
 menu = 广东移动
 title = 广东移动
-alerts = someloss
+slaves = SLAVE_CODE
 host = 211.136.192.6
 
 ++ EDU
 
 menu = 教育网络监控
 title = 教育网络监控列表
-host = /mainland/edu/pku /mainland/edu/scu /mainland/edu/sjtu /mainland/edu/xjtu
+host = /mainland/edu/pku~SLAVE_CODE /mainland/edu/scu~SLAVE_CODE /mainland/edu/sjtu~SLAVE_CODE /mainland/edu/xjtu~SLAVE_CODE
 
 +++ pku
 
 menu = 北京大学
 title = 北京大学
-alerts = someloss
+slaves = SLAVE_CODE
 host = www.pku.edu.cn
 
 +++ scu
 
 menu = 四川大学
 title = 四川大学
-alerts = someloss
+slaves = SLAVE_CODE
 host = www.scu.edu.cn
 
 +++ sjtu
 
 menu = 上海交通大学
 title = 上海交通大学
-alerts = someloss
+slaves = SLAVE_CODE
 host = www.sjtu.edu.cn
 
 +++ xjtu
 
 menu = 西安交通大学
 title = 西安交通大学
-alerts = someloss
+slaves = SLAVE_CODE
 host = www.xjtu.edu.cn
 
 + global
