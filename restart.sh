@@ -4,3 +4,5 @@ systemctl restart smokeping-slave.service
 systemctl restart smokeping-master.service
 # caddy重启
 systemctl restart caddy-sp.service
+# spawn-fcgi重启
+systemctl restart spawn-fcgi
