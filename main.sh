@@ -6,8 +6,8 @@ stty erase ^?
 caddy_dir="/etc/caddy-sp"
 
 install_packages() {
-	rpm_packages="tar zip unzip openssl openssl-devel make gcc rrdtool rrdtool-perl perl-core spawn-fcgi traceroute zlib zlib-devel wqy-zenhei-fonts nc"
-	apt_packages="tar zip unzip openssl libssl-dev make gcc rrdtool librrds-perl spawn-fcgi traceroute zlib1g zlib1g-dev fonts-droid-fallback netcat"
+	rpm_packages="tar zip unzip openssl openssl-devel make gcc rrdtool rrdtool-perl perl-core spawn-fcgi traceroute zlib zlib-devel wqy-zenhei-fonts nc jq"
+	apt_packages="tar zip unzip openssl libssl-dev make gcc rrdtool librrds-perl spawn-fcgi traceroute zlib1g zlib1g-dev fonts-droid-fallback netcat jq"
 	if [[ $ID == "debian" || $ID == "ubuntu" ]]; then
 		$PM update
 		$INS wget curl ca-certificates
@@ -46,9 +46,10 @@ compile_smokeping() {
 	[[ -e /tmp/smokeping ]] && rm -rf /tmp/smokeping
 	mkdir -p /tmp/smokeping
 	cd /tmp/smokeping
-	wget https://github.com/oetiker/SmokePing/releases/download/2.7.3/smokeping-2.7.3.tar.gz
-	tar xzvf smokeping-2.7.3.tar.gz
-	cd smokeping-2.7.3
+	version=$(curl -sL https://api.github.com/repos/oetiker/SmokePing/releases | jq -r ".[0].tag_name")
+	wget https://github.com/oetiker/SmokePing/releases/download/$version/smokeping-$version.tar.gz -O smokeping.tar.gz
+	tar xzvf smokeping.tar.gz
+	cd smokeping-$version
 	./configure --prefix=/usr/local/smokeping
 	if type -P make && ! type -P gmake; then
 		ln -s $(type -P make) /usr/bin/gmake
@@ -58,12 +59,14 @@ compile_smokeping() {
 }
 
 configure() {
-	origin="https://github.com/jiuqi9997/smokeping/raw/main"
+	origin="https://github.com/Xiefengshang/smokeping/raw/main"
 	ip=$(curl -sL https://api64.ipify.org -4) || error=1
 	[[ $error -eq 1 ]] && echo "获取本机 IP 地址失败" && exit 1
 	mkdir -p $caddy_dir
+	ca_version=$(curl -sL https://api.github.com/repos/caddyserver/caddy/releases | jq -r ".[0].tag_name")
+	ca_version2=${ca_version#*v}
 	wget $origin/Caddyfile -O $caddy_dir/Caddyfile
-	wget https://github.com/caddyserver/caddy/releases/download/v2.4.3/caddy_2.4.3_linux_amd64.tar.gz -O caddy.tar.gz
+	wget https://github.com/caddyserver/caddy/releases/download/$ca_version/caddy_${ca_version2}_`uname -s`_`dpkg --print-architecture`.tar.gz -O caddy.tar.gz
 	rm -rf $(tar xzvf caddy.tar.gz && cp caddy /usr/bin/caddy-sp) caddy.tar.gz
 	wget $origin/tcpping-sp -O /usr/bin/tcpping-sp && chmod +x /usr/bin/tcpping-sp
 	wget $origin/config -O /usr/local/smokeping/etc/config
