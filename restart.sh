@@ -1,8 +1,9 @@
 # slave端重启
 systemctl restart smokeping-slave.service
+# spawn-fcgi重启
+systemctl restart spawn-fcgi.service
 # master端重启
 systemctl restart smokeping-master.service
 # caddy重启
 systemctl restart caddy-sp.service
-# spawn-fcgi重启
-systemctl restart spawn-fcgi
+

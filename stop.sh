@@ -5,4 +5,4 @@ systemctl stop smokeping-slave.service
 # master端停止
 systemctl stop smokeping-master.service
 # spawn-fcgi停止
-systemctl stop spawn-fcgi
+systemctl stop spawn-fcgi.service
