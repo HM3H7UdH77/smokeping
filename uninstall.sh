@@ -8,3 +8,5 @@ systemctl disable caddy-sp.service
 systemctl disable spawn-fcgi
 # smokeping配置清空
 rm -rf /usr/local/smokeping
+# caddy-sp配置清空
+rm -rf /etc/caddy-sp/caddy
