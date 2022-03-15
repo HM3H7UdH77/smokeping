@@ -93,7 +93,7 @@ color = 0000ff
 probe = TCPPing
 
 menu = Top
-title = Network Latency Grapher
+title = 网络质量实时检测
 remark = Welcome to this SmokePing website. <br />
 
 + mainland
@@ -101,7 +101,7 @@ remark = Welcome to this SmokePing website. <br />
 menu = 大陆方向
 title = 大陆方向
 nomasterpoll = yes
-host = /mainland/ct-gz~SLAVE_CODE /mainland/ct-sh~SLAVE_CODE /mainland/cu-gz~SLAVE_CODE /mainland/cu-sh~SLAVE_CODE /mainland/cm-gz~SLAVE_CODE /mainland/cm-sh~SLAVE_CODE
+host = /mainland/ct-gz~SLAVE_CODE /mainland/ct-sh~SLAVE_CODE /mainland/cu-gz~SLAVE_CODE /mainland/cu-sh~SLAVE_CODE /mainland/cm-gz~SLAVE_CODE /mainland/cm-sh~SLAVE_CODE /mainland/pku~SLAVE_CODE /mainland/scu~SLAVE_CODE /mainland/sjtu~SLAVE_CODE /mainland/xjtu~SLAVE_CODE
 
 ++ ct-gz
 
@@ -144,6 +144,34 @@ menu = 上海移动
 title = 上海移动
 slaves = SLAVE_CODE
 host = 221.183.55.22
+
+++ pku
+
+menu = 北京大学
+title = 北京大学
+slaves = SLAVE_CODE
+host = 162.105.131.160
+
+++ scu
+
+menu = 四川大学
+title = 四川大学
+slaves = SLAVE_CODE
+host = 202.115.32.43
+
+++ sjtu
+
+menu = 上海交通大学
+title = 上海交通大学
+slaves = SLAVE_CODE
+host = 202.120.2.119
+
+++ xjtu
+
+menu = 西安交通大学
+title = 西安交通大学
+slaves = SLAVE_CODE
+host = 202.117.1.13
 
 + global
 
