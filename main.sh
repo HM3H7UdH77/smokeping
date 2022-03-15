@@ -59,8 +59,8 @@ compile_smokeping() {
 }
 
 configure() {
-	origin="https://github.com/jiuqi9997/smokeping/raw/main"
-	ip=$(curl -sL https://api64.ipify.org -4) || error=1
+	origin="https://github.com/Xiefengshang/smokeping/raw/main"
+	ip=$(curl -sL https://ip.sb -4) || error=1
 	[[ $error -eq 1 ]] && echo "获取本机 IP 地址失败" && exit 1
 	mkdir -p $caddy_dir
 	wget $origin/Caddyfile -O $caddy_dir/Caddyfile
