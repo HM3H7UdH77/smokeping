@@ -4,6 +4,10 @@
 
 本脚本会使 SmokePing 运行在 Caddy 上，与其他 WEB 服务隔离。
 
+本脚本修改自[jiuqi9997大佬的脚本](https://github.com/jiuqi9997/smokeping)
+
+在其基础上添加了教育网监控,同时改为下载最新版smokeping(caddy没改),同时提供了[启动运行脚本](https://raw.githubusercontent.com/Xiefengshang/smokeping/main/start.sh),[停止运行脚本](https://raw.githubusercontent.com/Xiefengshang/smokeping/main/stop.sh),[重启脚本](https://raw.githubusercontent.com/Xiefengshang/smokeping/main/restart.sh),[卸载脚本](https://raw.githubusercontent.com/Xiefengshang/smokeping/main/uninstall.sh)
+
 目前支持的 Linux 发行版：
 ```
 Debian 9+
