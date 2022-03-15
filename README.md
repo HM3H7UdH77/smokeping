@@ -8,7 +8,7 @@
 
 ## 修改内容
 
-1.  在其基础上添加了教育网监控,同时改为下载最新版smokeping(caddy没改);
+1.  在其基础上添加了教育网监控,同时改为下载最新版smokeping与caddy(用了`jq`所以脚本加了`jq`的安装);
 2.  同时提供了[启动运行脚本](https://raw.githubusercontent.com/Xiefengshang/smokeping/main/start.sh),[停止运行脚本](https://raw.githubusercontent.com/Xiefengshang/smokeping/main/stop.sh),[重启脚本](https://raw.githubusercontent.com/Xiefengshang/smokeping/main/restart.sh),[卸载脚本](https://raw.githubusercontent.com/Xiefengshang/smokeping/main/uninstall.sh);
 3.  获取本机ip改为[ip.sb](https://ip.sb)网站;
 
