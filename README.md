@@ -18,7 +18,7 @@ CentOS 7+
 ## 安装
 
 ```
-bash -c "$(curl -L https://github.com/jiuqi9997/smokeping/raw/main/main.sh)"
+bash -c "$(curl -L https://github.com/Xiefengshang/smokeping/raw/main/main.sh)"
 ```
 
 如果出现 `command not found` 请执行 `apt-get install curl -y` 或 `yum install curl -y`。
