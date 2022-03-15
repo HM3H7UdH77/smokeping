@@ -94,7 +94,7 @@ probe = TCPPing
 
 menu = Top
 title = 网络质量实时检测
-remark = Welcome to this SmokePing website. <br />
+remark = 欢迎来到Smokeping网络检测网页. <br />
 
 + mainland
 
@@ -150,276 +150,28 @@ host = 221.183.55.22
 menu = 北京大学
 title = 北京大学
 slaves = SLAVE_CODE
-host = 162.105.131.160
+host = www.bupt.edu.cn
 
 ++ scu
 
 menu = 四川大学
 title = 四川大学
 slaves = SLAVE_CODE
-host = 202.115.32.43
+host = www.scu.edu.cn
 
 ++ sjtu
 
 menu = 上海交通大学
 title = 上海交通大学
 slaves = SLAVE_CODE
-host = 202.120.2.119
+host = www.sjtu.edu.cn
 
 ++ xjtu
 
 menu = 西安交通大学
 title = 西安交通大学
 slaves = SLAVE_CODE
-host = 202.117.1.13
-
-+ Other
-
-menu = 三大网络监控
-
-title = 监控统计
-
-++ dianxin
-
-menu = 电信网络监控
-
-title = 电信网络监控列表
-
-host = /Other/dianxin/dianxin-bj~SLAVE_CODE /Other/dianxin/dianxin-hlj~SLAVE_CODE  /Other/dianxin/dianxin-tj~SLAVE_CODE /Other/dianxin/dianxin-sc~SLAVE_CODE /Other/dianxin/dianxin-sh~SLAVE_CODE /Other/dianxin/dianxin-gz~SLAVE_CODE 
-
-+++ dianxin-bj
-
-menu = 北京电信
-
-title = 北京电信
-
-slaves = SLAVE_CODE
-
-host = 202.96.199.133
-
- 
-
-+++ dianxin-hlj
-
-menu = 黑龙江电信
-
-title = 黑龙江电信
-
-slaves = SLAVE_CODE
-
-host = 219.147.198.242
-
- 
-
-+++ dianxin-tj
-
-menu = 天津电信
-
-title = 天津电信
-
-slaves = SLAVE_CODE
-
-host = 219.150.32.132
-
- 
-
-+++ dianxin-sc
-
-menu = 四川电信
-
-title = 四川电信
-
-slaves = SLAVE_CODE
-
-host = 61.139.2.69
-
- 
-
-+++ dianxin-sh
-
-menu = 上海电信
-
-title = 上海电信
-
-slaves = SLAVE_CODE
-
-host = 116.228.111.118
-
- 
-
-+++ dianxin-gz
-
-menu = 广东电信
-
-title = 广东电信
-
-slaves = SLAVE_CODE
-
-host = 113.111.211.22
-
- 
-
-++ liantong
-
-menu = 联通网络监控
-
-title = 联通网络监控列表
-
-host = /Other/liantong/liantong-bj~SLAVE_CODE /Other/liantong/liantong-hlj~SLAVE_CODE  /Other/liantong/liantong-tj~SLAVE_CODE /Other/liantong/liantong-sc~SLAVE_CODE  /Other/liantong/liantong-sh~SLAVE_CODE /Other/liantong/liantong-gz~SLAVE_CODE 
-
- 
-
-+++ liantong-bj
-
-menu = 北京联通
-
-title = 北京联通
-
-slaves = SLAVE_CODE
-
-host = 61.135.169.121
-
- 
-
-+++ liantong-hlj
-
-menu = 黑龙江联通
-
-title = 黑龙江联通
-
-slaves = SLAVE_CODE
-
-host = 202.97.224.69
-
- 
-
-+++ liantong-tj
-
-menu = 天津联通
-
-title = 天津联通
-
-slaves = SLAVE_CODE
-
-host = 202.99.96.68
-
- 
-
-+++ liantong-sc
-
-menu = 四川联通
-
-title = 四川联通
-
-slaves = SLAVE_CODE
-
-host = 119.6.6.6
-
- 
-
-+++ liantong-sh
-
-menu = 上海联通
-
-title = 上海联通
-
-slaves = SLAVE_CODE
-
-host = 210.22.84.3
-
- 
-
-+++ liantong-gz
-
-menu = 广东联通
-
-title = 广东联通
-
-slaves = SLAVE_CODE
-
-host = 221.5.88.88
-
- 
-
-++ yidong
-
-menu = 移动网络监控
-
-title = 移动网络监控列表
-
-host = /Other/yidong/yidong-bj~SLAVE_CODE /Other/yidong/yidong-hlj~SLAVE_CODE /Other/yidong/yidong-tj~SLAVE_CODE /Other/yidong/yidong-sc~SLAVE_CODE  /Other/yidong/yidong-sh~SLAVE_CODE /Other/yidong/yidong-gz~SLAVE_CODE  
-
- 
-
-+++ yidong-bj
-
-menu = 北京移动
-
-title = 北京移动
-
-slaves = SLAVE_CODE
-
-host = 221.130.33.52
-
- 
-
-+++ yidong-hlj
-
-menu = 黑龙江移动
-
-title = 黑龙江移动
-
-slaves = SLAVE_CODE
-
-host = 211.137.241.35
-
- 
-
-+++ yidong-tj
-
-menu = 天津移动
-
-title = 天津移动
-
-slaves = SLAVE_CODE
-
-host = 211.137.160.5
-
- 
-
-+++ yidong-sc
-
-menu = 四川移动
-
-title = 四川移动
-
-slaves = SLAVE_CODE
-
-host = 218.201.4.3
-
- 
-
-+++ yidong-sh
-
-menu = 上海移动
-
-title = 上海移动
-
-slaves = SLAVE_CODE
-
-host = 117.131.19.23
-
- 
-
-+++ yidong-gz
-
-menu = 广东移动
-
-title = 广东移动
-
-slaves = SLAVE_CODE
-
-host = 211.136.192.6
+host = www.xjtu.edu.cn
 
 + global
 
