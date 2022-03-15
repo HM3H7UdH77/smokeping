@@ -6,8 +6,8 @@ stty erase ^?
 caddy_dir="/etc/caddy-sp"
 
 install_packages() {
-	rpm_packages="tar zip unzip openssl openssl-devel make gcc rrdtool rrdtool-perl perl-core spawn-fcgi traceroute zlib zlib-devel wqy-zenhei-fonts nc"
-	apt_packages="tar zip unzip openssl libssl-dev make gcc rrdtool librrds-perl spawn-fcgi traceroute zlib1g zlib1g-dev fonts-droid-fallback netcat"
+	rpm_packages="tar zip unzip openssl openssl-devel make gcc rrdtool rrdtool-perl perl-core spawn-fcgi traceroute zlib zlib-devel wqy-zenhei-fonts nc jq"
+	apt_packages="tar zip unzip openssl libssl-dev make gcc rrdtool librrds-perl spawn-fcgi traceroute zlib1g zlib1g-dev fonts-droid-fallback netcat jq"
 	if [[ $ID == "debian" || $ID == "ubuntu" ]]; then
 		$PM update
 		$INS wget curl ca-certificates
