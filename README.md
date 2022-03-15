@@ -21,6 +21,10 @@ CentOS 7+
 
 ## 安装
 
+**由于是编译安装，所以在安装期间需要大量占用CPU并且需要一定时间，大约3-5min左右**
+
+**低内存小鸡存在编译安装卡住/异常退出的可能，建议开swap，OVZ的机器只能多试几次了，我的dedipath OVZ跑了3次**
+
 ```
 bash -c "$(curl -L https://github.com/Xiefengshang/smokeping/raw/main/main.sh)"
 ```
