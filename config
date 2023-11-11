@@ -108,14 +108,14 @@ host = /mainland/ct-gz~SLAVE_CODE /mainland/ct-sh~SLAVE_CODE /mainland/cu-gz~SLA
 menu = 广州电信
 title = 广州电信
 slaves = SLAVE_CODE
-host = 14.215.116.1
+host = gd.189.cn
 
 ++ ct-sh
 
 menu = 上海电信
 title = 上海电信
 slaves = SLAVE_CODE
-host = 180.153.28.5
+host = sh.189.cn
 
 ++ cu-gz
 
@@ -136,14 +136,14 @@ host = 211.95.52.116
 menu = 广州移动
 title = 广州移动
 slaves = SLAVE_CODE
-host = 120.232.176.254
+host = gd.10086.cn
 
 ++ cm-sh
 
 menu = 上海移动
 title = 上海移动
 slaves = SLAVE_CODE
-host = 221.183.55.22
+host = www.sh.10086.cn
 
 ++ pku
 
