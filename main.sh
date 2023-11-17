@@ -11,7 +11,7 @@ install_packages() {
 	if [[ $ID == "debian" || $ID == "ubuntu" ]]; then
 		#$PM update
 		$INS wget curl ca-certificates
-  		apt-get build-dep smokeping
+  		apt-get build-dep smokeping -y
 		#$INS $apt_packages
 	elif [[ $ID == "centos" ]]; then
 		sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config
