@@ -70,7 +70,8 @@ configure() {
 	ca_version2=${ca_version#*v}
 	
 	wget https://github.com/caddyserver/caddy/releases/download/$ca_version/caddy_${ca_version2}_`uname -s`_`dpkg --print-architecture`.tar.gz -O caddy.tar.gz
-	rm -rf $(tar xzvf caddy.tar.gz && cp caddy /usr/bin/caddy-sp) caddy.tar.gz
+	tar xzvf caddy.tar.gz && cp caddy /usr/bin/caddy-sp
+ 	rm -rf caddy.tar.gz
 	wget $origin/tcpping-sp -O /usr/bin/tcpping-sp && chmod +x /usr/bin/tcpping-sp
 	wget $origin/config -O /usr/local/smokeping/etc/config
 	wget $origin/systemd-caddy -O /etc/systemd/system/caddy-sp.service
