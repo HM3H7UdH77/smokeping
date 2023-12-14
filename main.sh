@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 export PATH="$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+export LC_ALL=C  # 将 LC_ALL 设置为 C
 stty erase ^?
 
 caddy_dir="/etc/caddy-sp"
