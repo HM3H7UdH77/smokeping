@@ -12,7 +12,7 @@ install_packages() {
 		#$PM update
 		$INS wget curl ca-certificates
   		apt-get build-dep smokeping -y
-    		apt-get install jq ` -y
+    		apt-get install jq -y
 		$INS $apt_packages
 	elif [[ $ID == "centos" ]]; then
 		sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config
