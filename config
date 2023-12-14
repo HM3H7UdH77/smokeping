@@ -101,12 +101,12 @@ remark = 欢迎来到Smokeping网络检测网页. <br />
 menu = 大陆方向
 title = 大陆方向
 nomasterpoll = yes
-host = /mainland/ct-gz~SLAVE_CODE /mainland/ct-sh~SLAVE_CODE /mainland/cu-gz~SLAVE_CODE /mainland/cu-sh~SLAVE_CODE /mainland/cm-gz~SLAVE_CODE /mainland/cm-sh~SLAVE_CODE /mainland/pku~SLAVE_CODE /mainland/scu~SLAVE_CODE /mainland/sjtu~SLAVE_CODE /mainland/xjtu~SLAVE_CODE
+host = /mainland/ct-gz~SLAVE_CODE /mainland/ct-sh~SLAVE_CODE /mainland/ct-sc~SLAVE_CODE /mainland/cu-gz~SLAVE_CODE /mainland/cu-sh~SLAVE_CODE /mainland/cm-gz~SLAVE_CODE /mainland/cm-sh~SLAVE_CODE /mainland/cm-sc~SLAVE_CODE /mainland/pku~SLAVE_CODE /mainland/scu~SLAVE_CODE /mainland/sjtu~SLAVE_CODE /mainland/xjtu~SLAVE_CODE
 
 ++ ct-gz
 
 menu = 广州电信
-title = 广州电信
+title = 广州电信c
 slaves = SLAVE_CODE
 host = gd.189.cn
 
@@ -116,6 +116,14 @@ menu = 上海电信
 title = 上海电信
 slaves = SLAVE_CODE
 host = sh.189.cn
+
+++ ct-sc
+
+
+menu = 四川电信
+title = 四川电信
+slaves = SLAVE_CODE
+host = sc.189.cn
 
 ++ cu-gz
 
@@ -131,6 +139,13 @@ title = 上海联通
 slaves = SLAVE_CODE
 host = 211.95.52.116
 
+++ cu-sc
+
+menu = 四川联通
+title = 四川联通
+slaves = SLAVE_CODE
+host = 119.6.6.6
+
 ++ cm-gz
 
 menu = 广州移动
@@ -144,6 +159,13 @@ menu = 上海移动
 title = 上海移动
 slaves = SLAVE_CODE
 host = www.sh.10086.cn
+
+++ cm-sc
+
+menu = 四川移动
+title = 四川移动
+slaves = SLAVE_CODE
+host = sc.10086.cn
 
 ++ pku
 
@@ -192,7 +214,7 @@ host = www.cloudflare.com
 menu = 香港 PCCW
 title = 香港 PCCW
 slaves = SLAVE_CODE
-host = 63.216.151.43
+host = www.pccw.com
 
 ++ sg-vu
 
