@@ -101,14 +101,15 @@ remark = 欢迎来到Smokeping网络检测网页. <br />
 menu = 大陆方向
 title = 大陆方向
 nomasterpoll = yes
-host = /mainland/ct-gz~SLAVE_CODE /mainland/ct-sh~SLAVE_CODE /mainland/ct-sc~SLAVE_CODE /mainland/cu-gz~SLAVE_CODE /mainland/cu-sh~SLAVE_CODE /mainland/cm-gz~SLAVE_CODE /mainland/cm-sh~SLAVE_CODE /mainland/cm-sc~SLAVE_CODE /mainland/pku~SLAVE_CODE /mainland/scu~SLAVE_CODE /mainland/sjtu~SLAVE_CODE /mainland/xjtu~SLAVE_CODE
+host = /mainland/ct-gz~SLAVE_CODE /mainland/ct-sh~SLAVE_CODE /mainland/ct-sc~SLAVE_CODE /mainland/cu-gz~SLAVE_CODE /mainland/cu-sh~SLAVE_CODE /mainland/cm-gz~SLAVE_CODE /mainland/cm-sh~SLAVE_CODE /mainland/cm-sc~SLAVE_CODE /mainland/thu~SLAVE_CODE /mainland/scu~SLAVE_CODE /mainland/sjtu~SLAVE_CODE /mainland/xjtu~SLAVE_CODE
 
 ++ ct-gz
 
 menu = 广州电信
-title = 广州电信c
+title = 广州电信
 slaves = SLAVE_CODE
 host = gd.189.cn
+prefer_ipv4 = yes
 
 ++ ct-sh
 
@@ -116,6 +117,7 @@ menu = 上海电信
 title = 上海电信
 slaves = SLAVE_CODE
 host = sh.189.cn
+prefer_ipv4 = yes
 
 ++ ct-sc
 
@@ -124,6 +126,7 @@ menu = 四川电信
 title = 四川电信
 slaves = SLAVE_CODE
 host = sc.189.cn
+prefer_ipv4 = yes
 
 ++ cu-gz
 
@@ -152,6 +155,7 @@ menu = 广州移动
 title = 广州移动
 slaves = SLAVE_CODE
 host = gd.10086.cn
+prefer_ipv4 = yes
 
 ++ cm-sh
 
@@ -159,6 +163,7 @@ menu = 上海移动
 title = 上海移动
 slaves = SLAVE_CODE
 host = www.sh.10086.cn
+prefer_ipv4 = yes
 
 ++ cm-sc
 
@@ -166,13 +171,15 @@ menu = 四川移动
 title = 四川移动
 slaves = SLAVE_CODE
 host = sc.10086.cn
+prefer_ipv4 = yes
 
-++ pku
+++ thu
 
-menu = 北京大学
-title = 北京大学
+menu = 清华大学
+title = 清华大学
 slaves = SLAVE_CODE
-host = www.bupt.edu.cn
+host = www.tsinghua.edu.cn
+prefer_ipv4 = yes
 
 ++ scu
 
@@ -180,6 +187,7 @@ menu = 四川大学
 title = 四川大学
 slaves = SLAVE_CODE
 host = www.scu.edu.cn
+prefer_ipv4 = yes
 
 ++ sjtu
 
@@ -187,6 +195,7 @@ menu = 上海交通大学
 title = 上海交通大学
 slaves = SLAVE_CODE
 host = www.sjtu.edu.cn
+prefer_ipv4 = yes
 
 ++ xjtu
 
@@ -194,6 +203,7 @@ menu = 西安交通大学
 title = 西安交通大学
 slaves = SLAVE_CODE
 host = www.xjtu.edu.cn
+prefer_ipv4 = yes
 
 + global
 
