@@ -109,7 +109,6 @@ menu = 广州电信
 title = 广州电信
 slaves = SLAVE_CODE
 host = gd.189.cn
-prefer_ipv4 = yes
 
 ++ ct-sh
 
@@ -117,7 +116,6 @@ menu = 上海电信
 title = 上海电信
 slaves = SLAVE_CODE
 host = sh.189.cn
-prefer_ipv4 = yes
 
 ++ ct-sc
 
@@ -126,7 +124,6 @@ menu = 四川电信
 title = 四川电信
 slaves = SLAVE_CODE
 host = sc.189.cn
-prefer_ipv4 = yes
 
 ++ cu-gz
 
@@ -155,7 +152,6 @@ menu = 广州移动
 title = 广州移动
 slaves = SLAVE_CODE
 host = gd.10086.cn
-prefer_ipv4 = yes
 
 ++ cm-sh
 
@@ -163,7 +159,6 @@ menu = 上海移动
 title = 上海移动
 slaves = SLAVE_CODE
 host = www.sh.10086.cn
-prefer_ipv4 = yes
 
 ++ cm-sc
 
@@ -171,7 +166,6 @@ menu = 四川移动
 title = 四川移动
 slaves = SLAVE_CODE
 host = sc.10086.cn
-prefer_ipv4 = yes
 
 ++ thu
 
@@ -179,7 +173,6 @@ menu = 清华大学
 title = 清华大学
 slaves = SLAVE_CODE
 host = www.tsinghua.edu.cn
-prefer_ipv4 = yes
 
 ++ scu
 
@@ -187,7 +180,6 @@ menu = 四川大学
 title = 四川大学
 slaves = SLAVE_CODE
 host = www.scu.edu.cn
-prefer_ipv4 = yes
 
 ++ sjtu
 
@@ -195,7 +187,6 @@ menu = 上海交通大学
 title = 上海交通大学
 slaves = SLAVE_CODE
 host = www.sjtu.edu.cn
-prefer_ipv4 = yes
 
 ++ xjtu
 
@@ -203,7 +194,6 @@ menu = 西安交通大学
 title = 西安交通大学
 slaves = SLAVE_CODE
 host = www.xjtu.edu.cn
-prefer_ipv4 = yes
 
 + global
 
